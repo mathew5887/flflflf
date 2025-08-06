@@ -422,7 +422,7 @@ def main(users, passwords, thread_number):
 
         hosts = load_lines('ips.txt')
         # Use standard SMTP ports:
-        ports = [25, 587, 465]
+        ports = [25, 587]
         total_combinations = len(hosts) * len(users) * len(passwords) * len(ports)
         logger.info(f"Processing {total_combinations} combinations across {len(hosts)} hosts and ports {ports}")
 
